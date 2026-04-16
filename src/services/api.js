@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API = axios.create({ baseURL: "https://crm-backend-8puj.onrender.com/api" })
+const API = axios.create({ baseURL: "https://crm-backend-production-a097.up.railway.app/api" })
 
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token")
